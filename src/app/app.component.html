@@ -1,0 +1,10 @@
+<div>
+    <h1>Real-Time Stock Prices</h1>
+    <div *ngIf="stock">
+      <p><strong>Stock:</strong> {{ stock.ticker }}</p>
+      <p><strong>Price:</strong> ${{ stock.price }}</p>
+      <p><strong>Updated:</strong> {{ stock.timestamp }}</p>
+    </div>
+    <p *ngIf="!stock">Waiting for stock updates...</p>
+  </div>
+  
