@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   stock: any;
 
   private socket$!: WebSocketSubject<any>;
-  private WEBSOCKET_URL = "wss://your-api-id.execute-api.us-east-1.amazonaws.com/prod";
+  private WEBSOCKET_URL = "wss://4n8a4exr6j.execute-api.us-east-1.amazonaws.com/production";
 
   ngOnInit() {
     this.socket$ = new WebSocketSubject(this.WEBSOCKET_URL);
